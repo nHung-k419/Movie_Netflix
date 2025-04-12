@@ -13,7 +13,7 @@ function App() {
   const toggle = (toogle) => {
     setToogle(toogle);
   };
-  console.log(PublicRoutes);
+  console.log(PublicRoutes)
   return (
     
       <div className="w-[100%] h-full bg-slate-800">
