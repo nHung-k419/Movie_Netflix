@@ -1,0 +1,35 @@
+
+.nav .ul{
+  display: none;
+}
+.nav:hover .ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.nav .Down {
+  transition: 0.5s;
+}
+.nav:hover .Down {
+  transform: rotate(180deg);
+}
+.Nav2 .ul {
+  display: none;
+}
+.Nav2:hover .ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.Nav2 .Down2 {
+  transition: 0.5s;
+}
+.Nav2:hover .Down2{
+  transform: rotate(180deg);
+}
+
+/*Start Prev && Net slider Slick */
