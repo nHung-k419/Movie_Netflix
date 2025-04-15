@@ -100,7 +100,7 @@ function Content({ Toogle, getLocalStorage }) {
                     <h2 className='lg:uppercase lg:mt-5 lg:text-white lg:pl-[75px] lg:font-bold lg:flex gap-1 uppercase mt-5 text-white pl-[15px] '>Phim Lẻ</h2>
                     <div className='lg:pl-[63px] lg:w-[94%] '>
                         {screenWidth >= 300 && screenWidth <= 768 ? <>{Api_single_movie.map((item, index) => (
-                            <a href={'https://phimapi.com/infoMovie/' + item.slug} key={index} className='mt-5'>
+                            <a href={'https://phimapi.com/phim/' + item.slug} key={index} className='mt-5'>
                                 <div className='relative lg:mt-3 flex justify-center'>
                                     <div className='group cursor-pointer overflow-hidden ml-3'>
                                         <img className='w-[200px] h-[280px] object-cover rounded-sm group-hover:scale-125 duration-500 transition-transform group-hover:opacity-50' src={`https://img.phimapi.com/${item.poster_url}`} />
@@ -119,7 +119,7 @@ function Content({ Toogle, getLocalStorage }) {
                             </a>
                         ))}</> : <Slider {...settings}>
                             {Api_single_movie.map((item, index) => (
-                                <a href={'https://phimapi.com/infoMovie/' + item.slug} key={index} className='h-[400px]'>
+                                <a href={'https://phimapi.com/phim/' + item.slug} key={index} className='h-[400px]'>
                                 <div className='relative flex mt-3'>
                                     <div className='group cursor-pointer overflow-hidden ml-3'>
                                         <img className='w-[200px] h-[280px] object-cover rounded-sm group-hover:scale-125 duration-500 transition-transform group-hover:opacity-50' src={`https://img.phimapi.com/${item.poster_url}`} />
@@ -144,7 +144,7 @@ function Content({ Toogle, getLocalStorage }) {
                     <h2 className='lg:uppercase lg:mt-5 lg:text-white lg:pl-[75px] lg:font-bold lg:flex gap-1 uppercase mt-5 text-white pl-[15px]'>Phim Bộ</h2>
                     <div className='lg:pl-[63px] lg:w-[94%] '>
                         {screenWidth >= 300 && screenWidth <= 768 ? <>{Api_series_movie.map((item, index) => (
-                            <a href={'https://phimapi.com/infoMovie/' + item.slug} key={index} className='mt-5'>
+                            <a href={'https://phimapi.com/phim/' + item.slug} key={index} className='mt-5'>
                                 <div className='relative lg:mt-3 flex justify-center'>
                                     <div className='group cursor-pointer overflow-hidden ml-3'>
                                         <img className='w-[200px] h-[280px] object-cover rounded-sm group-hover:scale-125 duration-500 transition-transform group-hover:opacity-50' src={`https://img.phimapi.com/${item.poster_url}`} />
@@ -163,7 +163,7 @@ function Content({ Toogle, getLocalStorage }) {
                             </a>
                         ))}</> : <Slider {...settings}>
                             {Api_series_movie.map((item, index) => (
-                                <a href={'https://phimapi.com/infoMovie/' + item.slug} key={index} className='h-[400px]'>
+                                <a href={'https://phimapi.com/phim/' + item.slug} key={index} className='h-[400px]'>
                                 <div className='relative flex mt-3'>
                                     <div className='group cursor-pointer overflow-hidden ml-3'>
                                         <img className='w-[200px] h-[280px] object-cover rounded-sm group-hover:scale-125 duration-500 transition-transform group-hover:opacity-50' src={`https://img.phimapi.com/${item.poster_url}`} />
@@ -188,7 +188,7 @@ function Content({ Toogle, getLocalStorage }) {
                     <h2 className='lg:uppercase lg:mt-5 lg:text-white lg:pl-[75px] lg:font-bold lg:flex gap-1 uppercase mt-5 text-white pl-[15px]'>Phim Hoạt Hình</h2>
                     <div className='lg:pl-[63px] lg:w-[94%] '>
                         {screenWidth >= 300 && screenWidth <= 768 ? <>{Api_anime_movie.map((item, index) => (
-                            <a href={'https://phimapi.com/infoMovie/' + item.slug} key={index} className='mt-5'>
+                            <a href={'https://phimapi.com/phim/' + item.slug} key={index} className='mt-5'>
                                 <div className='relative lg:mt-3 flex justify-center'>
                                     <div className='group cursor-pointer overflow-hidden ml-3'>
                                         <img className='w-[200px] h-[280px] object-cover rounded-sm group-hover:scale-125 duration-500 transition-transform group-hover:opacity-50' src={`https://img.phimapi.com/${item.poster_url}`} />
@@ -207,7 +207,7 @@ function Content({ Toogle, getLocalStorage }) {
                             </a>
                         ))}</> : <Slider {...settings}>
                             {Api_anime_movie.map((item, index) => (
-                                <a href={'https://phimapi.com/infoMovie/' + item.slug} key={index} className='h-[400px]'>
+                                <a href={'https://phimapi.com/phim/' + item.slug} key={index} className='h-[400px]'>
                                 <div className='relative flex mt-3'>
                                     <div className='group cursor-pointer overflow-hidden ml-3'>
                                         <img className='w-[200px] h-[280px] object-cover rounded-sm group-hover:scale-125 duration-500 transition-transform group-hover:opacity-50' src={`https://img.phimapi.com/${item.poster_url}`} />
@@ -232,7 +232,7 @@ function Content({ Toogle, getLocalStorage }) {
                     <h2 className='lg:uppercase lg:mt-5 lg:text-white lg:pl-[75px] lg:font-bold lg:flex gap-1 uppercase mt-5 text-white pl-[15px]'>TV Shows</h2>
                     <div className='lg:pl-[63px] lg:w-[94%] '>
                         {screenWidth >= 300 && screenWidth <= 768 ? <>{Api_Tv_Show.map((item, index) => (
-                            <a href={'https://phimapi.com/infoMovie/' + item.slug} key={index} className='mt-5'>
+                            <a href={'https://phimapi.com/phim/' + item.slug} key={index} className='mt-5'>
                                 <div className='relative lg:mt-3 flex justify-center'>
                                     <div className='group cursor-pointer overflow-hidden ml-3'>
                                         <img className='w-[200px] h-[280px] object-cover rounded-sm group-hover:scale-125 duration-500 transition-transform group-hover:opacity-50' src={`https://img.phimapi.com/${item.poster_url}`} />
@@ -251,7 +251,7 @@ function Content({ Toogle, getLocalStorage }) {
                             </a>
                         ))}</> : <Slider {...settings}>
                             {Api_Tv_Show.map((item, index) => (
-                                <a href={'https://phimapi.com/infoMovie/' + item.slug} key={index} className='h-[400px]'>
+                                <a href={'https://phimapi.com/phim/' + item.slug} key={index} className='h-[400px]'>
                                 <div className='relative flex mt-3'>
                                     <div className='group cursor-pointer overflow-hidden ml-3'>
                                         <img className='w-[200px] h-[280px] object-cover rounded-sm group-hover:scale-125 duration-500 transition-transform group-hover:opacity-50' src={`https://img.phimapi.com/${item.poster_url}`} />
