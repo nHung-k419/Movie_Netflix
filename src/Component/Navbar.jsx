@@ -4,8 +4,7 @@ import '../App.css'
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { CiMenuBurger } from "react-icons/ci";
-import { MdCancel } from "react-icons/md";
-
+import { MdCancel } from "react-icons/md";              
 import { AiFillHome } from "react-icons/ai";
 import { HiFilm } from "react-icons/hi2";
 import { BiSolidMoviePlay } from "react-icons/bi";

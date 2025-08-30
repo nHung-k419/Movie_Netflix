@@ -46,7 +46,7 @@ function Search_Movie() {
     // }
     return (
         <div className={`${PartSeriesMovie.length > 6 ? 'h-full' : 'h-screen '}`}>
-            {PartSeriesMovie.length > 0 ? <div>
+            {PartSeriesMovie?.length > 0 ? <div>
                 {Time_spinner ? <div className='flex justify-center h-screen items-center'>
                     <HashLoader color='#36d7b7' />
                 </div> : <div>
